@@ -7,7 +7,7 @@
 
 Note: It is recommended to learn the [basics](https://www.youtube.com/watch?v=ggSyF1SVFr4) of vim before the insatllation, as we will be using vim along the way.
 
-To install neovim in Ubuntu, run `sudo apt-get install neovim`.  Now, run `nvim` on the terminal to see if the installation worked out. If it did, the follwing will show:
+To install neovim in Ubuntu, run `sudo apt-get install neovim`. To install neovim in Arch Linux, run `sudo pacman -S neovim`.  Now, run `nvim` on the terminal to see if the installation worked out. If it did, the follwing will show:
 ![Screenshot from 2021-07-26 12-57-31](https://user-images.githubusercontent.com/48255007/126994756-fd7f51ce-94cd-4342-a797-4ac95a98c215.png)
 
 To create the neovim setup file, run `cd`, this should take you to the home directory. Once here, go into the `.config` folder by running `cd .config`. Now go into the `nvim` folder using `cd nvim`. If any of this folders dont exist, create them.
