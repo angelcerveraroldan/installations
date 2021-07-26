@@ -1,7 +1,7 @@
 # Installations
 
 - [Neovim](#neovim-installation-and-setup)
-  - [Neovim PLugins](#neovim-plugins)
+  - [Neovim Plugins](#neovim-plugins)
 
 # Neovim installation and setup
 
