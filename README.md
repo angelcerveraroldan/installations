@@ -56,7 +56,7 @@ call plug#end()
 Now save the file by going into command mode and running the command `:wq` and open the file back up again. Now run the command `:PlugInstall`. This command will install all of the plugins in the `init.vim` file.
 
 Once installed, we can remap the key that will toggle the tree on and off by adding the following command above the plug#begin(): 
-`nnoremap <silent> <F5>:NERDTreeToggle<CR>`
+`nnoremap <silent> <F5> :NERDTreeToggle<CR>`
 This command will change the key that toggles the tree, in this case, `F5`.
 
 Your `init.vim` file should now look something like this:
