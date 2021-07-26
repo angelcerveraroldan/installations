@@ -12,7 +12,7 @@ To install neovim in Ubuntu, run `sudo apt-get install neovim`. To install neovi
 
 To create the neovim setup file, run `cd`, this should take you to the home directory. Once here, go into the `.config` folder by running `cd .config`. Now go into the `nvim` folder using `cd nvim`. If any of this folders dont exist, create them.
 
-When you're inside the nvim folder, make a `init.vim` file by runnning `touch init.vim`. 
+When you're inside the nvim folder, make a `init.vim` file (if it doesn't already exist) by runnning `touch init.vim`. 
 
 Open the file using neovim by running `nvim init.vim`. After the file has opened, press `a` to go into insert mode, and write one of the following:
 
