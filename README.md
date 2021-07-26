@@ -14,7 +14,7 @@ To create the neovim setup file, run `cd`, this should take you to the home dire
 
 When you're inside the nvim folder, make a `init.vim` file by runnning `touch init.vim`. 
 
-Open the file using neovim by running `nvim init.vim`. After the file has opened, press `a` to go into inser mode, and write one of the following:
+Open the file using neovim by running `nvim init.vim`. After the file has opened, press `a` to go into insert mode, and write one of the following:
 
 1. `set number` -> This will show line numbers on the side.
 2. `set relativenumber` -> This will show the line number relative to the cursor.
@@ -55,7 +55,7 @@ call plug#end()
 
 Now save the file by going into command mode and running the command `:wq` and open the file back up again. Now run the command `:PlugInstall`. This command will install all of the plugins in the `init.vim` file.
 
-Once installed, we can remap the key that will toggle the tree on and of by adding the following command above the plug#begin(): 
+Once installed, we can remap the key that will toggle the tree on and off by adding the following command above the plug#begin(): 
 `nnoremap <silent> <F5>:NERDTreeToggle<CR>`
 This command will change the key that toggles the tree, in this case, `F5`.
 
@@ -63,7 +63,7 @@ Your `init.vim` file should now look something like this:
 ![Screenshot from 2021-07-26 14-11-31](https://user-images.githubusercontent.com/48255007/126994645-38824e49-a933-4351-90b4-32901805a4e1.png)
 
 Now we can add more plugins, for example:
-Plug 'chun-yang/auto-pairs'  <---  This will automatically close any brackets, quotation marks etc...
+`Plug 'chun-yang/auto-pairs'`  <---  This will automatically close any brackets, quotation marks etc...
 
 If youre using vim as an IDE, installing an autocompleter is very important. A plugin that does this is [coc autocomplete](https://github.com/neoclide/coc.nvim).
 To install this, first you need to have nodejs installed, to check if you have nodejs istalled, run `node -v` in the terminal. If nodejs is installed, its version will be shown. If it isn't installed, you can [install](https://github.com/nodesource/distributions/blob/master/README.md#debinstall) it by running the following command:
@@ -90,7 +90,7 @@ inoremap <silent><expr> <TAB>
    return !col || getline('.')[col - 1]  =~# '\s'
  endfunction
 ````
-As the commend indicates, this will et us use tab to navigate a pop up window that will autocomplete code.
+As the comment indicates, this will let us use tab to navigate a pop up window that will autocomplete code.
 
 To add support for python, we need to use [coc-pyright](https://github.com/fannheyward/coc-pyright). To install it, open the `init.vim`  file using neovim and run the command `:CocInstall coc-pyright`
 And to add support for [rust](https://github.com/fannheyward/coc-rust-analyzer), run the command `:CocInstall coc-rust-analyzer`.
