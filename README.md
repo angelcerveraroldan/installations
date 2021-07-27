@@ -42,7 +42,9 @@ call plug#end()
 Now we can install plugins:
 
 ## Neovim Plugins
-The first plugin to install is [NerdTree](https://github.com/preservim/nerdtree), this will add a file system explorer for neovim.  To install this plugin, we just need to paste `Plug 'preservim/nerdtree'` between the plug#begin() and the plug#end(). It should look like this:
+The first plugin to install is [NerdTree](https://github.com/preservim/nerdtree), this will add a file system explorer for neovim.  To install this plugin, we just need to paste
+
+`Plug 'preservim/nerdtree'` between the plug#begin() and the plug#end(). It should look like this:
 
 ````
 call plug#begin()
@@ -71,7 +73,9 @@ To install this, first you need to have nodejs installed, to check if you have n
 curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ````
-Once nodejs is installed, add `Plug 'neoclide/coc.nvim', {'branch': 'release'}` to the `init.vim` file as we did with the NerdTree plugin, and after saving the file, run the command `:PlugInstall` to install the coc plugin.
+Once nodejs is installed, add 
+
+`Plug 'neoclide/coc.nvim', {'branch': 'release'}` to the `init.vim` file as we did with the NerdTree plugin, and after saving the file, run the command `:PlugInstall` to install the coc plugin.
 
 Once coc is installed, paste the following in your `init.vim` file, just below the NerdTree key remap.
 
@@ -92,7 +96,9 @@ inoremap <silent><expr> <TAB>
 ````
 As the comment indicates, this will let us use tab to navigate a pop up window that will autocomplete code.
 
-To add support for python, we need to use [coc-pyright](https://github.com/fannheyward/coc-pyright). To install it, open the `init.vim`  file using neovim and run the command `:CocInstall coc-pyright`
+To add support for python, we need to use [coc-pyright](https://github.com/fannheyward/coc-pyright). To install it, open the `init.vim`  file using neovim and run the command 
+
+`:CocInstall coc-pyright`
 And to add support for [rust](https://github.com/fannheyward/coc-rust-analyzer), run the command `:CocInstall coc-rust-analyzer`.
 
 Once you have installed both of this, you now have autocmplete for rust and python when using neovim.
